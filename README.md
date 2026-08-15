@@ -1,5 +1,6 @@
 # DocuResearch AI
 
+[![CI](https://github.com/Parasbirla33/-docuresearch-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/Parasbirla33/-docuresearch-ai/actions/workflows/ci.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/)
 [![Status: Phase 7 / V1 complete](https://img.shields.io/badge/status-phase%207%20%2F%20V1%20complete-brightgreen)](#status)
 [![License: Proprietary](https://img.shields.io/badge/license-proprietary-lightgrey)](#)
