@@ -15,9 +15,10 @@ instead of relying on replace semantics.
 from __future__ import annotations
 
 import operator
-from typing import Annotated, Any, TypedDict
+from typing import Annotated, Any
 
 from pydantic import TypeAdapter
+from typing_extensions import TypedDict
 
 from docuresearch.models.claims import Claim, Contradiction, EvidenceMatrixEntry
 from docuresearch.models.research import (
