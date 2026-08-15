@@ -1,5 +1,9 @@
 # DocuResearch AI
 
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/)
+[![Status: Phase 7 / V1 complete](https://img.shields.io/badge/status-phase%207%20%2F%20V1%20complete-brightgreen)](#status)
+[![License: Proprietary](https://img.shields.io/badge/license-proprietary-lightgrey)](#)
+
 A modular, LangGraph-based documentary research & script generation agent.
 Given a topic, it runs a research pipeline (planning → source discovery →
 extraction → claim verification → contradiction detection → evidence
