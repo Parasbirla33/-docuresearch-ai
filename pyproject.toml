@@ -1,0 +1,67 @@
+[project]
+name = "docuresearch-ai"
+version = "0.1.0"
+description = "DocuResearch AI - Documentary Research & Script Generation Agent"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Proprietary" }
+
+dependencies = [
+    "langgraph>=0.2.45",
+    "langchain-core>=0.3.15",
+    "langchain-openai>=0.2.6",
+    "langchain-anthropic>=0.3.0",
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.6.0",
+    "httpx>=0.27.2",
+    "beautifulsoup4>=4.12.3",
+    "trafilatura>=1.12.2",
+    "sqlalchemy>=2.0.35",
+    "python-dotenv>=1.0.1",
+    "structlog>=24.4.0",
+    "tenacity>=9.0.0",
+    "rich>=13.9.2",
+    "lxml>=5.3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.3",
+    "pytest-asyncio>=0.24.0",
+    "pytest-mock>=3.14.0",
+    "mypy>=1.13.0",
+    "ruff>=0.7.1",
+]
+postgres = [
+    "psycopg[binary]>=3.2.3",
+]
+observability = [
+    "langsmith>=0.1.137",
+]
+
+[project.scripts]
+docuresearch = "docuresearch.cli:main"
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+pythonpath = ["src"]
+# Windows' default %TEMP%\pytest-of-<user> can end up permission-denied on some
+# machines/policies; keep pytest's tmp_path fixture inside the repo instead.
+addopts = "--basetemp=.pytest_tmp"
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+disallow_untyped_defs = false
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
