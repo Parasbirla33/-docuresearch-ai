@@ -1,10 +1,21 @@
 # DocuResearch AI
 
 [![CI](https://github.com/Parasbirla33/-docuresearch-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/Parasbirla33/-docuresearch-ai/actions/workflows/ci.yml)
-[![Topics: 11](https://img.shields.io/badge/topics-11-informational)](https://github.com/Parasbirla33/-docuresearch-ai)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/)
 [![Status: Phase 7 / V1 complete](https://img.shields.io/badge/status-phase%207%20%2F%20V1%20complete-brightgreen)](#status)
 [![License: Proprietary](https://img.shields.io/badge/license-proprietary-lightgrey)](#)
+
+[![langgraph](https://img.shields.io/badge/topic-langgraph-informational)](https://github.com/topics/langgraph)
+[![llm](https://img.shields.io/badge/topic-llm-informational)](https://github.com/topics/llm)
+[![ai-agent](https://img.shields.io/badge/topic-ai--agent-informational)](https://github.com/topics/ai-agent)
+[![langchain](https://img.shields.io/badge/topic-langchain-informational)](https://github.com/topics/langchain)
+[![openai](https://img.shields.io/badge/topic-openai-informational)](https://github.com/topics/openai)
+[![pydantic](https://img.shields.io/badge/topic-pydantic-informational)](https://github.com/topics/pydantic)
+[![python](https://img.shields.io/badge/topic-python-informational)](https://github.com/topics/python)
+[![documentary](https://img.shields.io/badge/topic-documentary-informational)](https://github.com/topics/documentary)
+[![script-generation](https://img.shields.io/badge/topic-script--generation-informational)](https://github.com/topics/script-generation)
+[![content-generation](https://img.shields.io/badge/topic-content--generation-informational)](https://github.com/topics/content-generation)
+[![sqlalchemy](https://img.shields.io/badge/topic-sqlalchemy-informational)](https://github.com/topics/sqlalchemy)
 
 A modular, LangGraph-based documentary research & script generation agent.
 Given a topic, it runs a research pipeline (planning → source discovery →
